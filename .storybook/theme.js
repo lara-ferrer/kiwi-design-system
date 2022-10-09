@@ -1,5 +1,5 @@
 import { create } from '@storybook/theming';
-import logo from './assets/logo-white.png';
+import logo from './assets/kiwi-logo.png';
 
 export default create({
   base: 'light',
@@ -8,7 +8,7 @@ export default create({
   colorSecondary: 'deepskyblue',
 
   // UI
-  appBg: '#7DDE80',
+  appBg: '#F1FC98',
   appContentBg: '#FFFFFF',
   appBorderColor: '#000000',
   appBorderRadius: 4,
@@ -22,9 +22,9 @@ export default create({
   textInverseColor: 'rgba(255,255,255,0.9)',
 
   // Toolbar default and active colors
-  barTextColor: '#F9F9F9',
-  barSelectedColor: '#FFFFFF',
-  barBg: '#7DDE80',
+  barTextColor: '#7DDE80',
+  barSelectedColor: '#F97D23',
+  barBg: '#F1FC98',
 
   // Form colors
   inputBg: '#FFFFFF',
