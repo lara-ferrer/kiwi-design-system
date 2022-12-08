@@ -8,7 +8,7 @@ export default create({
   colorSecondary: 'deepskyblue',
 
   // UI
-  appBg: '#F1FC98',
+  appBg: '#F6F2CF',
   appContentBg: '#FFFFFF',
   appBorderColor: '#000000',
   appBorderRadius: 4,
@@ -22,9 +22,9 @@ export default create({
   textInverseColor: 'rgba(255,255,255,0.9)',
 
   // Toolbar default and active colors
-  barTextColor: '#7DDE80',
+  barTextColor: '#42736C',
   barSelectedColor: '#F97D23',
-  barBg: '#F1FC98',
+  barBg: '#FFE9A4',
 
   // Form colors
   inputBg: '#FFFFFF',
