@@ -1,11 +1,10 @@
-@import "/src/tokens/colors/core.scss";
-@import "/src/tokens/typography/core.scss";
-@import "/src/tokens/colors/semantic.scss";
+@import "/src/tokens/index.scss";
 
 :root {
   /* Global */
-  --kiwi-button-transition: 0.5s;
+  --kiwi-button-transition: var(--kiwi-core-medium-transition);
   --kiwi-button-ff: var(--kiwi-core-ff-primary);
+  --kiwi-button-br: var(--kiwi-core-br-32);
 
   /* State -- Primary */
   --kiwi-button-primary-bg: var(--kiwi-semantic-primary);
@@ -23,20 +22,30 @@
   --kiwi-button-disabled-bg: var(--kiwi-core-neutral-300);
   --kiwi-button-disabled-bg-contrast: var(--kiwi-core-neutral-400);
 
+  /* State -- Danger */
+  --kiwi-button-danger-bg: var(--kiwi-semantic-danger);
+  --kiwi-button-danger-bg-contrast: var(--kiwi-core-white);
+
   /* Size -- Large */
-  --kiwi-button-large-fs: var(--kiwi-core-fs-24);
+  --kiwi-button-large-ph: var(--kiwi-core-spacing-24);
+  --kiwi-button-large-pv: var(--kiwi-core-spacing-16);
+
+  /* Size -- Medium */
+  --kiwi-button-medium-ph: var(--kiwi-core-spacing-16);
+  --kiwi-button-medium-pv: var(--kiwi-core-spacing-12);
+
+  /* Size -- Small */
+  --kiwi-button-small-ph: var(--kiwi-core-spacing-12);
+  --kiwi-button-small-pv: var(--kiwi-core-spacing-8);
 }
 
 .kiwi-button {
-  position: relative;
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  border: 0;
-  border-radius: 15px;
   cursor: pointer;
   display: inline-block;
-  line-height: 1;
+  position: relative;
+  border: 0;
+  font-family: var(--kiwi-button-ff);
+  border-radius: var(--kiwi-button-br);
 
   &--primary {
     color: var(--kiwi-button-primary-text-color);
@@ -48,6 +57,16 @@
       background-color: var(--kiwi-button-primary-bg-hover);
       transition: var(--kiwi-button-transition);
     }
+
+    &:focus {
+      box-shadow: 0 0 0 4px var(--kiwi-button-primary-bg-contrast);
+      background-color: var(--kiwi-button-primary-bg);
+    }
+  }
+
+  &--primary &--danger {
+    color: var(--kiwi-button-danger-bg);
+    background-color: var(--kiwi-button-danger-bg-contrast);
   }
 
   &--secondary {
@@ -59,37 +78,43 @@
       &:after {
         content: "";
         background-color: var(--kiwi-button-secondary-bg-hover);
+        border-radius: var(--kiwi-button-br);
         position: absolute;
-        right: -8px;
+        right: -5px;
         left: 4px;
-        border-radius: 15px;
-        bottom: -6px;
-        top: 3px;
+        bottom: -4px;
+        top: 4px;
         width: -webkit-fill-available;
         height: -webkit-fill-available;
         z-index: -1;
       }
     }
+
+    &:focus {
+      box-shadow: 0 0 0 4px var(--kiwi-button-primary-bg-contrast);
+      background-color: var(--kiwi-button-secondary-bg);
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  &--small {
+    padding: var(--kiwi-button-small-pv) var(--kiwi-button-small-ph);
+  }
+
+  &--medium {
+    padding: var(--kiwi-button-medium-pv) var(--kiwi-button-medium-ph);
+  }
+
+  &--large {
+    padding: var(--kiwi-button-large-pv) var(--kiwi-button-large-ph);
   }
 
   &--disabled {
     pointer-events: none;
     background-color: var(--kiwi-button-disabled-bg);
     color: var(--kiwi-button-disabled-bg-contrast);
-  }
-
-  &--small {
-    font-size: 12px;
-    padding: 10px 16px;
-  }
-
-  &--medium {
-    font-size: 14px;
-    padding: 11px 20px;
-  }
-
-  &--large {
-    font-size: 16px;
-    padding: 12px 24px;
+    box-shadow: none;
   }
 }

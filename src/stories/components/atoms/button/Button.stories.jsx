@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from './Button';
 
 export default {
-  title: 'Components/Button',
+  title: 'Components/Atoms/Button',
   component: Button,
 };
 
@@ -14,25 +14,29 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   state: 'primary',
-  label: 'Button',
+  size: 'large',
+  label: 'Click here',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   state: 'secondary',
-  label: 'Button',
+  size: 'large',
+  label: 'Click here',
 };
 
-export const Large = Template.bind({});
-Large.args = {
+export const Disabled = Template.bind({});
+Disabled.args = {
   state: 'primary',
   size: 'large',
-  label: 'Button',
+  label: 'Click here',
+  isDisabled: true,
 };
 
-export const Small = Template.bind({});
-Small.args = {
+export const Danger = Template.bind({});
+Danger.args = {
   state: 'primary',
-  size: 'small',
-  label: 'Button',
+  size: 'large',
+  label: 'Click here',
+  isDanger: true,
 };
