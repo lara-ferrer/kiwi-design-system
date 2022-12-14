@@ -1,0 +1,21 @@
+@import "/src/tokens/index.scss";
+
+.kiwi-text-button {
+    &--large {
+        font-size: var(--kiwi-core-fs-20);
+        font-weight: var(--kiwi-core-fw-600);
+        line-height: var(--kiwi-core-lh-32);
+    }
+
+    &--medium {
+        font-size: var(--kiwi-core-fs-16);
+        font-weight: var(--kiwi-core-fw-600);
+        line-height: var(--kiwi-core-lh-24);
+    }
+
+    &--small {
+        font-size: var(--kiwi-core-fs-16);
+        font-weight: var(--kiwi-core-fw-600);
+        line-height: var(--kiwi-core-lh-24);
+    }
+}
