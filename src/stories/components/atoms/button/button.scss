@@ -25,6 +25,8 @@
   /* State -- Danger */
   --kiwi-button-danger-bg: var(--kiwi-semantic-danger);
   --kiwi-button-danger-bg-contrast: var(--kiwi-core-white);
+  --kiwi-button-danger-bg-hover: var(--kiwi-core-warm-900);
+  --kiwi-button-danger-border-focus: var(--kiwi-core-warm-900);
 
   /* Size -- Large */
   --kiwi-button-large-ph: var(--kiwi-core-spacing-24);
@@ -62,11 +64,6 @@
       box-shadow: 0 0 0 4px var(--kiwi-button-primary-bg-contrast);
       background-color: var(--kiwi-button-primary-bg);
     }
-  }
-
-  &--primary &--danger {
-    color: var(--kiwi-button-danger-bg);
-    background-color: var(--kiwi-button-danger-bg-contrast);
   }
 
   &--secondary {
@@ -116,5 +113,23 @@
     background-color: var(--kiwi-button-disabled-bg);
     color: var(--kiwi-button-disabled-bg-contrast);
     box-shadow: none;
+  }
+
+  &--danger {
+    color: var(--kiwi-button-danger-bg-contrast);
+    background-color: var(--kiwi-button-danger-bg);
+    transition: var(--kiwi-button-transition);
+
+    &:hover {
+      background-color: var(--kiwi-button-danger-bg-hover);
+      transition: var(--kiwi-button-transition);
+      box-shadow: none;
+    }
+
+    &:focus {
+      color: var(--kiwi-button-danger-bg-contrast);
+      background-color: var(--kiwi-button-danger-bg);
+      box-shadow: 0 0 0 4px var(--kiwi-button-danger-border-focus);
+    }
   }
 }
