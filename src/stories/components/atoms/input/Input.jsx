@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import "./input.scss";
 import "../../../../styles/index.scss";
 
@@ -9,10 +10,13 @@ export const Input = ({
   isDisabled,
   isDanger
 }) => {
+  var inputClass = classNames({
+    'kiwi-input--disabled': isDisabled,
+    'kiwi-input--danger': isDanger
+  });
+
   return (
-    <input type={type} className={`kiwi-input ${isDisabled ? "kiwi-input--disabled" : ""
-      } ${isDanger ? "kiwi-input--danger" : ""
-      }`} placeholder={placeholder}></input>
+    <input type={type} className={`kiwi-input ${inputClass}`} placeholder={placeholder}></input>
   );
 };
 

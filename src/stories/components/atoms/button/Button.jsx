@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import "./button.scss";
 import "../../../../styles/index.scss";
 
@@ -11,12 +12,15 @@ export const Button = ({
   isDanger,
   onClick,
 }) => {
+  var btnClass = classNames({
+    'kiwi-button--disabled': isDisabled,
+    'kiwi-button--danger': isDanger
+  });
+
   return (
     <button
       type="button"
-      className={`kiwi-button kiwi-button--${state} kiwi-button--${size} ${
-        isDisabled ? "kiwi-button--disabled" : ""
-      } ${isDanger ? "kiwi-button--danger" : ""}`}
+      className={`kiwi-button btnClass kiwi-button--${state} kiwi-button--${size} ${btnClass}`}
       onClick={onClick}
     >
       <span className={`kiwi-text-button--${size}`}>{label}</span>
