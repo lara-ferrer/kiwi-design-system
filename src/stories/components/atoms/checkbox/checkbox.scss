@@ -1,0 +1,57 @@
+@import "/src/tokens/index.scss";
+@import "./checkbox.tokens.scss";
+
+.kiwi-checkbox {
+    display: flex;
+    position: relative;
+    color: var(--kiwi-checkbox-text-color);
+    font-family: var(--kiwi-checkbox-ff);
+
+    &__box {
+        display: block;
+        cursor: pointer;
+        width: var(--kiwi-checkbox-box-width);
+        height: var(--kiwi-checkbox-box-height);
+        border: 1px solid var(--kiwi-checkbox-box-border-color);
+        border-radius: 0;
+        background-color: var(--kiwi-checkbox-box-bg-color);
+        align-self: center;
+
+        &:after {
+            content: "";
+            display: none;
+            position: relative;
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid var(--kiwi-checkbox-checkmark-color);
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin: 0;
+    }
+
+    input:checked~&__box {
+        background-color: var(--kiwi-checkbox-box-bg-color);
+    }
+
+    input:checked~&__box:after {
+        display: block;
+    }
+
+    &__label {
+        position: relative;
+        align-self: center;
+        margin-left: 14px;
+    }
+}
