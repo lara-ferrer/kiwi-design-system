@@ -1,0 +1,7 @@
+@import "/src/tokens/index.scss";
+@import "./icon.tokens.scss";
+
+.icon {
+    color: var(--kiwi-icon-color);
+    font-size: var(--kiwi-icon-fs);
+}
