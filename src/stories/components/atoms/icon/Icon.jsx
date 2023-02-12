@@ -9,7 +9,7 @@ export const Icon = ({
 }) => {
 
   return (
-    <span class={`icon icon-${name}`}></span>
+    <i class={`icon icon-${name}`}></i>
   );
 };
 
