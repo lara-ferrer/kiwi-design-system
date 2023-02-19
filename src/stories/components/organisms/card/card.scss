@@ -1,0 +1,28 @@
+@import "/src/tokens/index.scss";
+@import "./card.tokens.scss";
+
+.kiwi-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--kiwi-card-bg);
+    border: 1px solid var(--kiwi-card-border-color);
+    border-radius: var(--kiwi-card-border-radius);
+    max-height: var(--kiwi-card-max-height);
+    max-width: var(--kiwi-card-max-width);
+
+    &__image {
+        width: 100%;
+        border-radius: var(--kiwi-card-border-radius) var(--kiwi-card-border-radius) 0 0;
+    }
+
+    &__content {
+        padding: 16px;
+    }
+
+    &__address {
+        font-size: 14px;
+        color: grey;
+        text-transform: uppercase;
+        font-weight: var(--kiwi-core-fw-700);
+    }
+}
