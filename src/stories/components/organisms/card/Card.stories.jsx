@@ -4,7 +4,7 @@ import image from "../../../assets/card-image.jpg";
 import { Card } from './Card';
 
 export default {
-  title: 'Components/Atoms/Card',
+  title: 'Components/Organisms/Card',
   component: Card,
 };
 
