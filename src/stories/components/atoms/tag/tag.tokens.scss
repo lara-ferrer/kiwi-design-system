@@ -1,0 +1,20 @@
+:root {
+  /* Default */
+  --kiwi-tag-active-br: var(--kiwi-core-br-16);
+  --kiwi-tag-active-bg-color: var(--kiwi-core-green-500);
+  --kiwi-tag-active-color: var(--kiwi-core-green-900);
+  --kiwi-tag-active-padding: 4px;
+  --kiwi-tag-active-max-width: 80px;
+  --kiwi-tag-active-ff: var(--kiwi-core-ff-primary);
+  --kiwi-tag-active-fw: var(--kiwi-core-fw-600);
+  --kiwi-tag-active-fs: var(--kiwi-core-fs-16);
+  --kiwi-tag-transition: var(--kiwi-core-medium-transition);
+
+  /* Hover */
+  --kiwi-tag-hover-bg-color: var(--kiwi-core-white);
+  --kiwi-tag-hover-color: var(--kiwi-core-green-900);
+  --kiwi-tag-hover-border-color: var(--kiwi-core-green-900);
+
+  /* Focus */
+  --kiwi-tag-focus-bg-contrast: var(--kiwi-core-green-900);
+}
