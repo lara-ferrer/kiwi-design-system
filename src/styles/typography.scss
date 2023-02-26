@@ -1,55 +1,75 @@
 @import "/src/tokens/index.scss";
 
 html {
-    font-family: var(--kiwi-core-ff-secondary);
+  font-family: var(--kiwi-core-ff-secondary);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-family: var(--kiwi-core-ff-primary);
-    color: var(--kiwi-core-green-800);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--kiwi-core-ff-primary);
+  color: var(--kiwi-core-green-800);
 }
 
 h1 {
-    font-size: var(--kiwi-core-fs-64);
-    font-weight: var(--kiwi-core-fw-800);
-    line-height: var(--kiwi-core-lh-48);
+  font-size: var(--kiwi-core-fs-64);
+  font-weight: var(--kiwi-core-fw-800);
+  line-height: var(--kiwi-core-lh-48);
 }
 
 h2 {
-    font-size: var(--kiwi-core-fs-40);
-    font-weight: var(--kiwi-core-fw-800);
-    line-height: var(--kiwi-core-lh-56);
+  font-size: var(--kiwi-core-fs-40);
+  font-weight: var(--kiwi-core-fw-800);
+  line-height: var(--kiwi-core-lh-56);
 }
 
 h3 {
-    font-size: var(--kiwi-core-fs-36);
-    font-weight: var(--kiwi-core-fw-500);
-    line-height: var(--kiwi-core-lh-48);
+  font-size: var(--kiwi-core-fs-36);
+  font-weight: var(--kiwi-core-fw-500);
+  line-height: var(--kiwi-core-lh-48);
 }
 
 h4 {
-    font-size: var(--kiwi-core-fs-24);
-    font-weight: var(--kiwi-core-fw-500);
-    line-height: var(--kiwi-core-lh-32);
+  font-size: var(--kiwi-core-fs-24);
+  font-weight: var(--kiwi-core-fw-500);
+  line-height: var(--kiwi-core-lh-32);
+}
+
+p {
+  margin: 0;
 }
 
 .kiwi-text-button {
-    &--large {
-        font-size: var(--kiwi-core-fs-20);
-        font-weight: var(--kiwi-core-fw-600);
-        line-height: var(--kiwi-core-lh-32);
-    }
+  &--large {
+    font-size: var(--kiwi-core-fs-20);
+    font-weight: var(--kiwi-core-fw-600);
+    line-height: var(--kiwi-core-lh-32);
+  }
 
-    &--medium {
-        font-size: var(--kiwi-core-fs-16);
-        font-weight: var(--kiwi-core-fw-600);
-        line-height: var(--kiwi-core-lh-24);
-    }
+  &--medium {
+    font-size: var(--kiwi-core-fs-16);
+    font-weight: var(--kiwi-core-fw-600);
+    line-height: var(--kiwi-core-lh-24);
+  }
 
-    &--small {
-        font-size: var(--kiwi-core-fs-16);
-        font-weight: var(--kiwi-core-fw-600);
-        line-height: var(--kiwi-core-lh-24);
-    }
+  &--small {
+    font-size: var(--kiwi-core-fs-16);
+    font-weight: var(--kiwi-core-fw-600);
+    line-height: var(--kiwi-core-lh-24);
+  }
+}
+
+.kiwi-subtitle {
+  font-size: var(--kiwi-core-fs-14);
+  color: var(--kiwi-core-neutral-400);
+  text-transform: uppercase;
+  font-weight: var(--kiwi-core-fw-700);
+
+  &--alert {
+    color: var(--kiwi-core-warm-500);
+  }
 }
