@@ -2,6 +2,10 @@
 @import "./card.tokens.scss";
 
 .kiwi-card {
+    --kiwi-tag-active-bg-color: var(--kiwi-core-green-900);
+    --kiwi-tag-active-color: var(--kiwi-core-white);
+
+
     display: flex;
     flex-direction: column;
     background-color: var(--kiwi-card-bg);
@@ -12,7 +16,7 @@
 
     &__image {
         width: 100%;
-        max-height: 166px;
+        max-height: var(--kiwi-card-image-max-height);
         border-radius: var(--kiwi-card-border-radius) var(--kiwi-card-border-radius) 0 0;
     }
 
@@ -22,5 +26,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    &__categories {
+        display: flex;
+        gap: var(--kiwi-card-categories-gap);
     }
 }
