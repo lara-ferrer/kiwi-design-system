@@ -4,15 +4,18 @@ import "./tag.scss";
 import "../../../../styles/index.scss";
 
 export const Tag = ({
-  title
+  title, size
 }) => {
   return (
-    <div class="kiwi-tag">{title}</div>
+    <div className={`kiwi-tag kiwi-tag--${size}`}>
+      {title}
+    </div>
   );
 };
 
 Tag.propTypes = {
   title: PropTypes.string.isRequired,
+  size: PropTypes.oneOf('small', 'medium')
 };
 
 Tag.defaultProps = {
