@@ -1,0 +1,54 @@
+@import "/src/tokens/index.scss";
+@import "./radio.tokens.scss";
+
+.kiwi-radio {
+    display: flex;
+    position: relative;
+    color: var(--kiwi-radio-text-color);
+    font-family: var(--kiwi-radio-ff);
+
+    &__selector {
+        display: block;
+        cursor: pointer;
+        width: var(--kiwi-radio-selector-width);
+        height: var(--kiwi-radio-selector-height);
+        border: 2px solid var(--kiwi-radio-selector-border-color);
+        border-radius: 50px;
+        background-color: var(--kiwi-radio-selector-bg-color);
+        align-self: center;
+
+        &:after {
+            content: "";
+            display: none;
+            position: relative;
+            left: 3px;
+            top: 3px;
+            width: 14px;
+            height: 14px;
+            background-color: var(--kiwi-radio-checkmark-color);
+            border-radius: 50px;
+        }
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin: 0;
+    }
+
+    input:checked~&__selector {
+        background-color: var(--kiwi-radio-selector-bg-color);
+    }
+
+    input:checked~&__selector:after {
+        display: block;
+    }
+
+    &__label {
+        position: relative;
+        align-self: center;
+        margin-left: 14px;
+    }
+}

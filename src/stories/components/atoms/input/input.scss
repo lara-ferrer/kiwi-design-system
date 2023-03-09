@@ -1,0 +1,38 @@
+@import "/src/tokens/index.scss";
+@import "./input.tokens.scss";
+
+.kiwi-input {
+  padding: 12px;
+  min-width: 300px;
+  border: 1px solid var(--kiwi-input-border-color);
+  color: var(--kiwi-input-text-color);
+  font-family: var(--kiwi-input-ff);
+
+  &::placeholder {
+    color: var(--kiwi-input-placeholder-text-color);
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid var(--kiwi-input-focus-border-color);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    border: 1px solid var(--kiwi-input-disabled-border-color);
+    background-color: var(--kiwi-input-disabled-bg-color);
+
+    &::placeholder {
+      color: var(--kiwi-input-disabled-text-color);
+    }
+  }
+
+  &--danger {
+    color: var(--kiwi-input-danger-text-color);
+    border: 1px solid var(--kiwi-input-danger-border-color);
+
+    &:focus-visible {
+      border: 2px solid var(--kiwi-input-danger-border-color);
+    }
+  }
+}

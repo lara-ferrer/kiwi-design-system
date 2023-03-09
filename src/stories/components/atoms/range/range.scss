@@ -1,0 +1,38 @@
+@import "/src/tokens/index.scss";
+@import "./range.tokens.scss";
+
+.kiwi-range {
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 300px;
+  height: 13px;
+  background: var(--kiwi-range-bg-color);
+  border: 2px solid var(--kiwi-range-border-color);
+  border-radius: var(--kiwi-range-br);
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--kiwi-range-thumb-br);
+    background: var(--kiwi-range-thumb-color);
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--kiwi-range-thumb-br);
+    background: var(--kiwi-range-thumb-color);
+    cursor: pointer;
+  }
+}

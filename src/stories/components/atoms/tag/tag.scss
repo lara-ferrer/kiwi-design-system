@@ -1,0 +1,35 @@
+@import "/src/tokens/index.scss";
+@import "./tag.tokens.scss";
+
+.kiwi-tag {
+  border-radius: var(--kiwi-tag-active-br);
+  background-color: var(--kiwi-tag-active-bg-color);
+  color: var(--kiwi-tag-active-color);
+  text-align: center;
+  padding: var(--kiwi-tag-active-padding-vertical) var(--kiwi-tag-active-padding-horizontal);
+  font-family: var(--kiwi-tag-active-ff);
+  font-weight: var(--kiwi-tag-active-fw);
+  cursor: pointer;
+  transition: var(--kiwi-tag-transition);
+
+  &:hover {
+    transition: var(--kiwi-tag-transition);
+    box-shadow: 0 0 0 1px var(--kiwi-tag-hover-border-color);
+    background-color: var(--kiwi-tag-hover-bg-color);
+    color: var(--kiwi-tag-hover-color);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px var(--kiwi-tag-focus-bg-contrast);
+  }
+
+  &--small {
+    font-size: var(--kiwi-tag-small-fs);
+    min-width: var(--kiwi-tag-small-min-width);
+  }
+
+  &--medium {
+    font-size: var(--kiwi-tag-medium-fs);
+    min-width: var(--kiwi-tag-medium-min-width);
+  }
+}

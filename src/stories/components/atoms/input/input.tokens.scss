@@ -1,0 +1,19 @@
+:root {
+    /* Global */
+    --kiwi-input-text-color: var(--kiwi-core-green-900);
+    --kiwi-input-ff: var(--kiwi-core-ff-secondary);
+    --kiwi-input-placeholder-text-color: var(--kiwi-core-neutral-300);
+    --kiwi-input-border-color: var(--kiwi-core-green-600);
+
+    /* Focus */
+    --kiwi-input-focus-border-color: var(--kiwi-core-green-900);
+
+    /* Disabled */
+    --kiwi-input-disabled-text-color: var(--kiwi-core-neutral-600);
+    --kiwi-input-disabled-border-color: var(--kiwi-core-neutral-600);
+    --kiwi-input-disabled-bg-color: var(--kiwi-core-neutral-300);
+
+    /* Danger */
+    --kiwi-input-danger-text-color: var(--kiwi-core-warm-500);
+    --kiwi-input-danger-border-color: var(--kiwi-core-warm-500);
+}

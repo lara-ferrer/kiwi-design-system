@@ -1,0 +1,19 @@
+:root {
+    /* Global */
+    --kiwi-searcher-text-color: var(--kiwi-core-green-900);
+    --kiwi-searcher-ff: var(--kiwi-core-ff-secondary);
+    --kiwi-searcher-placeholder-text-color: var(--kiwi-core-neutral-300);
+    --kiwi-searcher-border-color: var(--kiwi-core-neutral-600);
+
+    /* Focus */
+    --kiwi-searcher-focus-border-color: var(--kiwi-core-green-900);
+
+    /* Disabled */
+    --kiwi-searcher-disabled-text-color: var(--kiwi-core-neutral-600);
+    --kiwi-searcher-disabled-border-color: var(--kiwi-core-neutral-600);
+    --kiwi-searcher-disabled-bg-color: var(--kiwi-core-neutral-300);
+
+    /* Danger */
+    --kiwi-searcher-danger-text-color: var(--kiwi-core-warm-500);
+    --kiwi-searcher-danger-border-color: var(--kiwi-core-warm-500);
+}

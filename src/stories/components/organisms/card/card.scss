@@ -1,0 +1,35 @@
+@import "/src/tokens/index.scss";
+@import "./card.tokens.scss";
+
+.kiwi-card {
+    --kiwi-tag-active-bg-color: var(--kiwi-core-green-900);
+    --kiwi-tag-active-color: var(--kiwi-core-white);
+
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--kiwi-card-bg);
+    border: 1px solid var(--kiwi-card-border-color);
+    border-radius: var(--kiwi-card-border-radius);
+    min-height: var(--kiwi-card-min-height);
+    max-width: var(--kiwi-card-max-width);
+
+    &__image {
+        width: 100%;
+        max-height: var(--kiwi-card-image-max-height);
+        border-radius: var(--kiwi-card-border-radius) var(--kiwi-card-border-radius) 0 0;
+    }
+
+    &__content {
+        height: calc(234px - (var(--kiwi-card-content-padding) * 2));
+        padding: var(--kiwi-card-content-padding);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__categories {
+        display: flex;
+        gap: var(--kiwi-card-categories-gap);
+    }
+}

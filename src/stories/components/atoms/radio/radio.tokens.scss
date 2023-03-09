@@ -1,0 +1,12 @@
+:root {
+    /* Global */
+    --kiwi-radio-text-color: var(--kiwi-core-neutrals-500);
+    --kiwi-radio-ff: var(--kiwi-core-ff-secondary);
+    --kiwi-radio-checkmark-color: var(--kiwi-core-green-700);
+
+    /* Selector */
+    --kiwi-radio-selector-width: 20px;
+    --kiwi-radio-selector-height: 20px;
+    --kiwi-radio-selector-border-color: var(--kiwi-core-green-500);
+    --kiwi-radio-selector-bg-color: var(--kiwi-core-white);
+}

@@ -1,0 +1,27 @@
+:root {
+  /* Default */
+  --kiwi-tag-active-br: var(--kiwi-core-br-16);
+  --kiwi-tag-active-bg-color: var(--kiwi-core-green-500);
+  --kiwi-tag-active-color: var(--kiwi-core-green-900);
+  --kiwi-tag-active-padding-vertical: 4px;
+  --kiwi-tag-active-padding-horizontal: 12px;
+  --kiwi-tag-active-ff: var(--kiwi-core-ff-primary);
+  --kiwi-tag-active-fw: var(--kiwi-core-fw-600);
+  --kiwi-tag-transition: var(--kiwi-core-medium-transition);
+
+  /* Hover */
+  --kiwi-tag-hover-bg-color: var(--kiwi-core-white);
+  --kiwi-tag-hover-color: var(--kiwi-core-green-900);
+  --kiwi-tag-hover-border-color: var(--kiwi-core-green-900);
+
+  /* Focus */
+  --kiwi-tag-focus-bg-contrast: var(--kiwi-core-green-900);
+
+  /* Small */
+  --kiwi-tag-small-fs: var(--kiwi-core-fs-14);
+  --kiwi-tag-small-min-width: 62px;
+
+  /* Medium */
+  --kiwi-tag-medium-fs: var(--kiwi-core-fs-16);
+  --kiwi-tag-medium-min-width: 80px;
+}

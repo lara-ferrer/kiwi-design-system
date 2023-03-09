@@ -1,0 +1,12 @@
+:root {
+    /* Global */
+    --kiwi-checkbox-text-color: var(--kiwi-core-neutrals-500);
+    --kiwi-checkbox-ff: var(--kiwi-core-ff-secondary);
+    --kiwi-checkbox-checkmark-color: var(--kiwi-core-green-700);
+
+    /* Box */
+    --kiwi-checkbox-box-width: 20px;
+    --kiwi-checkbox-box-height: 20px;
+    --kiwi-checkbox-box-border-color: var(--kiwi-core-green-500);
+    --kiwi-checkbox-box-bg-color: var(--kiwi-core-white);
+}

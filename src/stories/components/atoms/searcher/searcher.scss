@@ -1,0 +1,43 @@
+@import "/src/tokens/index.scss";
+@import "./searcher.tokens.scss";
+
+.kiwi-searcher {
+  padding: 8px;
+  min-width: 300px;
+  border: 1px solid var(--kiwi-searcher-border-color);
+  border-radius: var(--kiwi-core-br-12);
+  color: var(--kiwi-searcher-text-color);
+  font-family: var(--kiwi-searcher-ff);
+
+  &:after {
+    content: "\e913";
+  }
+
+  &::placeholder {
+    color: var(--kiwi-searcher-placeholder-text-color);
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid var(--kiwi-searcher-focus-border-color);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    border: 1px solid var(--kiwi-searcher-disabled-border-color);
+    background-color: var(--kiwi-searcher-disabled-bg-color);
+
+    &::placeholder {
+      color: var(--kiwi-searcher-disabled-text-color);
+    }
+  }
+
+  &--danger {
+    color: var(--kiwi-searcher-danger-text-color);
+    border: 1px solid var(--kiwi-searcher-danger-border-color);
+
+    &:focus-visible {
+      border: 2px solid var(--kiwi-searcher-danger-border-color);
+    }
+  }
+}
