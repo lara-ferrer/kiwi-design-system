@@ -1,8 +1,9 @@
 name: Semantic release 
 
-on: 
+on:
   push:
-    branches: [ feat/npm-package ]
+    branches:
+      - feat/npm-package
 
 jobs:
   publish:
