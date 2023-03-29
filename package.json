@@ -6,10 +6,10 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "css-loader": "6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "css-loader": "6.5.1",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "style-loader": "2.0.0",
@@ -64,6 +64,8 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
+    "style-dictionary": "^3.7.2",
+    "token-transformer": "0.0.30",
     "webpack": "^5.74.0"
   }
 }

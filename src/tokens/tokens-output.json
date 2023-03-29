@@ -1,0 +1,142 @@
+{
+  "core-green-100": {
+    "value": "#F6F2CF",
+    "type": "color"
+  },
+  "core-green-200": {
+    "value": "#E8F1BC",
+    "type": "color"
+  },
+  "core-green-300": {
+    "value": "#CEECAB",
+    "type": "color"
+  },
+  "core-green-400": {
+    "value": "#ADE69A",
+    "type": "color"
+  },
+  "core-green-500": {
+    "value": "#89DF8B",
+    "type": "color"
+  },
+  "core-green-600": {
+    "value": "#77C489",
+    "type": "color"
+  },
+  "core-green-700": {
+    "value": "#65AA83",
+    "type": "color"
+  },
+  "core-green-800": {
+    "value": "#538E7A",
+    "type": "color"
+  },
+  "core-green-900": {
+    "value": "#42736C",
+    "type": "color"
+  },
+  "semantic-primary": {
+    "value": "#89DF8B",
+    "type": "color"
+  },
+  "semantic-primary-contrast": {
+    "value": "#42736C",
+    "type": "color"
+  },
+  "core-ff-primary": {
+    "value": "Baloo2",
+    "type": "fontFamilies"
+  },
+  "core-ff-secondary": {
+    "value": "Poppins",
+    "type": "fontFamilies"
+  },
+  "core-fw-800": {
+    "value": 800,
+    "type": "fontWeights"
+  },
+  "core-fw-700": {
+    "value": 700,
+    "type": "fontWeights"
+  },
+  "core-fw-600": {
+    "value": 600,
+    "type": "fontWeights"
+  },
+  "core-fw-500": {
+    "value": 500,
+    "type": "fontWeights"
+  },
+  "core-heading-1": {
+    "fontWeight": {
+      "value": 800,
+      "type": "fontWeights"
+    },
+    "fontFamily": {
+      "value": "Baloo2",
+      "type": "fontFamilies"
+    },
+    "lineHeight": {
+      "value": 64,
+      "type": "lineHeight"
+    },
+    "fontSize": {
+      "value": 48,
+      "type": "fontSizes"
+    }
+  },
+  "core-lh-64": {
+    "value": 64,
+    "type": "lineHeights"
+  },
+  "core-lh-56": {
+    "value": 56,
+    "type": "lineHeights"
+  },
+  "core-lh-48": {
+    "value": 48,
+    "type": "lineHeights"
+  },
+  "core-lh-32": {
+    "value": 32,
+    "type": "lineHeights"
+  },
+  "core-lh-24": {
+    "value": 24,
+    "type": "lineHeights"
+  },
+  "core-fs-48": {
+    "value": 48,
+    "type": "fontSizes"
+  },
+  "core-fs-40": {
+    "value": 40,
+    "type": "fontSizes"
+  },
+  "core-fs-36": {
+    "value": 36,
+    "type": "fontSizes"
+  },
+  "core-fs-24": {
+    "value": 24,
+    "type": "fontSizes"
+  },
+  "core-fs-20": {
+    "value": 20,
+    "type": "fontSizes"
+  },
+  "core-fs-16": {
+    "value": 16,
+    "type": "fontSizes"
+  },
+  "core-warm-100": {
+    "value": "#FFE9A4",
+    "type": "color"
+  },
+  "tokenSetOrder": {
+    "0": {
+      "value": "global",
+      "type": "other"
+    }
+  }
+}
