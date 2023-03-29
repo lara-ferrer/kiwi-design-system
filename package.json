@@ -21,6 +21,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "rimraf": "^4.4.1",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "style-loader": "2.0.0",
@@ -28,10 +29,11 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "build-storybook -s public",
+    "build": "build-storybook -o ./dist",
     "test": "react-scripts test",
+    "clean": "rimraf dist/",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -o ./dist"
   },
   "eslintConfig": {
     "extends": [
