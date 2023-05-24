@@ -11,9 +11,13 @@
   "files": [
     "dist"
   ],
+  "type": "module",
   "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "release": {
-    "branches": ["feat/npm-package"]
+    "branches": [
+      "feat/npm-package"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -24,7 +28,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "rimraf": "^4.4.1",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "style-loader": "2.0.0",
@@ -32,10 +35,8 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "build-storybook -o ./dist",
-    "test": "react-scripts test",
+    "build": "npm run clean && rollup -c",
     "clean": "rimraf dist/",
-    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -o ./dist"
   },
   "eslintConfig": {
@@ -67,6 +68,9 @@
     ]
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-sucrase": "^5.0.1",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-interactions": "^6.5.10",
@@ -79,6 +83,12 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
+    "rimraf": "^4.4.1",
+    "rollup": "^3.20.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "semantic-release": "^21.0.0",
     "webpack": "^5.74.0"
   }

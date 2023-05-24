@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./card.scss";
 import "../../../../styles/index.scss";
-import { Tag } from "../../atoms/tag/Tag";
+import { Tag } from "../../atoms/tag/Tag.jsx";
 
 export const Card = ({ image, title, address, openTime, isOpen, categories }) => {
   return (
