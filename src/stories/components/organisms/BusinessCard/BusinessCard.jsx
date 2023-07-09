@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./business-card.scss";
 import "../../../../styles/index.scss";
-import { Tag } from "../../atoms/tag/Tag";
+import { Tag } from "../../atoms/tag/Tag.jsx";
 
 export const BusinessCard = ({ image, title, address, openTime, isOpen, categories }) => {
   return (
