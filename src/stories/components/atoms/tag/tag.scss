@@ -11,6 +11,7 @@
   font-weight: var(--kiwi-tag-active-fw);
   cursor: pointer;
   transition: var(--kiwi-tag-transition);
+  width: fit-content;
 
   &:hover {
     transition: var(--kiwi-tag-transition);
