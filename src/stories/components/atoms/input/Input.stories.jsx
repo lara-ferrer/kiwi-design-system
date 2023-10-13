@@ -32,3 +32,15 @@ Danger.args = {
   isDisabled: false,
   isDanger: true
 };
+
+export const Icon = Template.bind({});
+Icon.args = {
+  placeholder: "Write something here...",
+  type: "text",
+  variant: {
+    type: "icon",
+    name: "search"
+  },
+  isDisabled: false,
+  isDanger: false
+};

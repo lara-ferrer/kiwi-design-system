@@ -1,0 +1,12 @@
+:root {
+    /* Global */
+    --kiwi-searcher-border-color: var(--kiwi-core-neutral-600);
+    --kiwi-searcher-border-radius: var(--kiwi-core-br-12);
+    --kiwi-searcher-background-color: var(--kiwi-core-white);
+
+    /* Focus */
+    --kiwi-searcher-focus-border-color: var(--kiwi-core-green-900);
+
+    /* Results */
+    --kiwi-searcher-results-border-color: var(--kiwi-core-green-900);
+}

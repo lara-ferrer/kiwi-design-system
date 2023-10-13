@@ -4,15 +4,29 @@
 .kiwi-input {
   padding: 12px;
   min-width: 300px;
-  border: 1px solid var(--kiwi-input-border-color);
-  color: var(--kiwi-input-text-color);
-  font-family: var(--kiwi-input-ff);
+  background-color: var(--kiwi-input-background-color);
+  border: var(--kiwi-input-border-width) solid var(--kiwi-input-border-color);
+  border-radius: var(--kiwi-input-border-radius);
+  display: flex;
 
-  &::placeholder {
-    color: var(--kiwi-input-placeholder-text-color);
+  input {
+    border: none;
+    width: 100%;
+    padding: 0;
+    color: var(--kiwi-input-text-color);
+    font-family: var(--kiwi-input-ff);
+    background-color: transparent;
+
+    &::placeholder {
+      color: var(--kiwi-input-placeholder-text-color);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
   }
 
-  &:focus-visible {
+  &:focus-within {
     outline: none;
     border: 2px solid var(--kiwi-input-focus-border-color);
   }
@@ -22,7 +36,7 @@
     border: 1px solid var(--kiwi-input-disabled-border-color);
     background-color: var(--kiwi-input-disabled-bg-color);
 
-    &::placeholder {
+    input::placeholder {
       color: var(--kiwi-input-disabled-text-color);
     }
   }
@@ -34,5 +48,12 @@
     &:focus-visible {
       border: 2px solid var(--kiwi-input-danger-border-color);
     }
+  }
+
+  .kiwi-icon {
+    --kiwi-icon-color: var(--kiwi-core-green-900);
+    --kiwi-icon-fs: var(--kiwi-core-fs-20);
+
+    margin-right: .5rem;
   }
 }

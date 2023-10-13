@@ -2,8 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./city-card.scss";
 import "../../../../styles/index.scss";
-import { Tag } from "../../atoms/tag/Tag";
-import image from "../../../assets/city-image.jpg";
+import { Tag } from "../../atoms";
 
 export const CityCard = ({
   city,
@@ -46,6 +45,5 @@ CityCard.defaultProps = {
   country: "España",
   businessCount: 1250,
   businessName: "restaurantes",
-  size: "medium",
-  image: image,
+  size: "medium"
 };

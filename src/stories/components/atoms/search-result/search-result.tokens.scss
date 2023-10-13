@@ -1,0 +1,10 @@
+:root {
+    /* Name */
+    --kiwi-search-result-name-text-color-active: var(--kiwi-core-green-900);
+    --kiwi-search-result-name-text-color-hover: var(--kiwi-core-green-600);
+    --kiwi-search-result-hover-transition: var(--kiwi-core-fast-transition);
+
+    /* Address */
+    --kiwi-search-result-address-text-color: var(--kiwi-core-neutral-400);
+    --kiwi-search-result-address-text-size: var(--kiwi-core-fs-12);
+}

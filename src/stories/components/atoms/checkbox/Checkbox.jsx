@@ -6,11 +6,11 @@ import "../../../../styles/index.scss";
 export const Checkbox = ({
   label,
   id,
-  name
+  name,
+  onClick
 }) => {
-
   return (
-    <label className="kiwi-checkbox" for={name}>
+    <label className="kiwi-checkbox" for={name} onClick={onClick}>
       <input type="checkbox" id={id} name={name} />
       <span class="kiwi-checkbox__box" />
       <span className="kiwi-checkbox__label">{label}</span>
@@ -22,6 +22,7 @@ Checkbox.propTypes = {
   label: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  onClick: PropTypes.func
 };
 
 Checkbox.defaultProps = {

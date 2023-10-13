@@ -9,7 +9,7 @@ export const Icon = ({
 }) => {
 
   return (
-    <i class={`icon icon-${name}`}></i>
+    <i class={`kiwi-icon icon-${name}`}></i>
   );
 };
 

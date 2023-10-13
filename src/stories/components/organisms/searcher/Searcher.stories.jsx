@@ -3,7 +3,7 @@ import React from 'react';
 import { Searcher } from './Searcher';
 
 export default {
-  title: 'Components/Atoms/Searcher',
+  title: 'Components/Organisms/Searcher',
   component: Searcher,
 };
 
@@ -16,16 +16,21 @@ Default.args = {
   isDanger: false
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  placeholder: "Search something here...",
-  isDisabled: true,
-  isDanger: false
-};
-
-export const Danger = Template.bind({});
-Danger.args = {
+export const WithResults = Template.bind({});
+WithResults.args = {
   placeholder: "Search something here...",
   isDisabled: false,
-  isDanger: true
+  isDanger: false,
+  results: [
+    {
+      name: "Los Helechos",
+      address: "Zaragoza, España",
+      categories: ["Vegetariano", "Vegano"]
+    },
+    {
+      name: "Los Hechizos",
+      address: "Madrid, España",
+      categories: ["Flexitariano"]
+    }
+  ]
 };

@@ -3,21 +3,17 @@ import PropTypes from "prop-types";
 import "./tag.scss";
 import "../../../../styles/index.scss";
 
-export const Tag = ({
-  title, size
-}) => {
+export const Tag = ({ title, size, link }) => {
   return (
-    <div className={`kiwi-tag kiwi-tag--${size}`}>
-      {title}
-    </div>
+    <a href={link} target="_blank" rel="noreferrer">
+      <div className={`kiwi-tag kiwi-tag--${size} ${link && `kiwi-tag--link`}`}>
+        {title}
+      </div>
+    </a>
   );
 };
 
 Tag.propTypes = {
   title: PropTypes.string.isRequired,
-  size: PropTypes.oneOf('small', 'medium')
-};
-
-Tag.defaultProps = {
-  title: "Vegan",
+  size: PropTypes.oneOf("small", "medium"),
 };

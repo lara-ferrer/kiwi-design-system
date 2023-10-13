@@ -1,6 +1,5 @@
 import React from 'react';
 import image from "../../../assets/card-image.jpg";
-
 import { BusinessCard } from './BusinessCard';
 
 export default {
