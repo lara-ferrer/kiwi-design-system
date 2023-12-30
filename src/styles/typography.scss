@@ -39,6 +39,12 @@ h4 {
   line-height: var(--kiwi-core-lh-32);
 }
 
+h5 {
+  font-size: var(--kiwi-core-fs-18);
+  font-weight: var(--kiwi-core-fw-500);
+  line-height: var(--kiwi-core-lh-32);
+}
+
 p {
   margin: 0;
 }
@@ -77,4 +83,8 @@ a {
   &--alert {
     color: var(--kiwi-core-warm-500);
   }
+}
+
+.t-uppercase {
+  text-transform: uppercase;
 }

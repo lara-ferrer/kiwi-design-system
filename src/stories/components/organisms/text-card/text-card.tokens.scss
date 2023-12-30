@@ -1,0 +1,12 @@
+:root {
+    /* Global */
+    --kiwi-text-card-padding: var(--kiwi-core-spacing-16);
+    --kiwi-text-card-bg: var(--kiwi-core-white);
+    --kiwi-text-card-border-color: var(--kiwi-core-green-800);
+    --kiwi-text-card-border-radius: var(--kiwi-core-br-16);
+    --kiwi-text-card-min-height: 400px;
+    --kiwi-text-card-max-width: 300px;
+    --kiwi-text-card-image-max-height: 166px;
+    --kiwi-text-card-content-padding: var(--kiwi-core-spacing-16);
+    --kiwi-text-card-categories-gap: 8px;
+}
