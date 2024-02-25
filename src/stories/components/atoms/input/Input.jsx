@@ -11,7 +11,10 @@ export const Input = ({
   type,
   isDisabled,
   isDanger,
-  onInput
+  isClearable,
+  onClear,
+  onInput,
+  onBlur
 }) => {
   var inputClass = classNames({
     'kiwi-input--disabled': isDisabled,
@@ -21,7 +24,8 @@ export const Input = ({
   return (
     <div className={`kiwi-input ${inputClass}`}>
       {variant && variant.type === 'icon' && <Icon name={variant.name} />}
-      <input type={type} placeholder={placeholder} onInput={onInput} />
+      <input type={type} placeholder={placeholder} onInput={onInput} onBlur={onBlur} />
+      {isClearable && <span className="kiwi-input__clear" onClick={() => onClear}>X</span>}
     </div>
   );
 };
@@ -32,12 +36,16 @@ Input.propTypes = {
   variant: PropTypes.object,
   isDisabled: PropTypes.bool,
   isDanger: PropTypes.bool,
-  onInput: PropTypes.func
+  isClearable: PropTypes.bool,
+  onClear: PropTypes.func,
+  onInput: PropTypes.func,
+  onBlur: PropTypes.func
 };
 
 Input.defaultProps = {
   placeholder: "Write something here...",
   type: "text",
   isDisabled: false,
-  isDanger: false
+  isDanger: false,
+  isClearable: false
 };

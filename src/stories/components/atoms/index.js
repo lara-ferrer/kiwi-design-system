@@ -7,3 +7,4 @@ export * from './range';
 export * from './select';
 export * from './tag';
 export * from './breadcrumbs';
+export * from './notice-message';

@@ -50,6 +50,12 @@
     }
   }
 
+  &__clear {
+    font-family: var(--kiwi-input-ff);
+    font-weight: var(--kiwi-core-fw-600);
+    cursor: pointer;
+  }
+
   .kiwi-icon {
     --kiwi-icon-color: var(--kiwi-core-green-900);
     --kiwi-icon-fs: var(--kiwi-core-fs-20);

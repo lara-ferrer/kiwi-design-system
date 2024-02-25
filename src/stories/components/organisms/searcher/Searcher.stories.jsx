@@ -13,7 +13,8 @@ export const Default = Template.bind({});
 Default.args = {
   placeholder: "Search something here...",
   isDisabled: false,
-  isDanger: false
+  isDanger: false,
+  isClearable: true
 };
 
 export const WithResults = Template.bind({});
@@ -21,6 +22,7 @@ WithResults.args = {
   placeholder: "Search something here...",
   isDisabled: false,
   isDanger: false,
+  isClearable: true,
   results: [
     {
       name: "Los Helechos",

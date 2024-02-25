@@ -12,7 +12,7 @@ export const Checkbox = ({
   return (
     <label className="kiwi-checkbox" for={name} onClick={onClick}>
       <input type="checkbox" id={id} name={name} />
-      <span class="kiwi-checkbox__box" />
+      <span className="kiwi-checkbox__box" />
       <span className="kiwi-checkbox__label">{label}</span>
     </label>
   );

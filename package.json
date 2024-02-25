@@ -25,25 +25,27 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.3.2",
-    "css-loader": "6.5.1",
+    "css-loader": "^6.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.43.4",
-    "sass-loader": "^12.3.0",
-    "style-loader": "2.0.0",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
     "webpack": "5.31.2"
   },
   "scripts": {
     "start": "storybook dev -p 6006 -s public",
     "build": "npm run clean && rollup -c",
     "clean": "rimraf dist/",
-    "build-storybook": "storybook build -o ./dist"
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ],
     "overrides": [
       {
@@ -69,6 +71,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-sucrase": "^5.0.1",
@@ -77,11 +81,16 @@
     "@storybook/addon-interactions": "^7.5.0-alpha.7",
     "@storybook/addon-links": "^7.5.0-alpha.7",
     "@storybook/addon-mdx-gfm": "^7.5.0-alpha.7",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
     "@storybook/node-logger": "^7.5.0-alpha.7",
     "@storybook/preset-create-react-app": "^7.5.0-alpha.7",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^7.5.0-alpha.7",
+    "@storybook/test": "^7.6.17",
     "@storybook/testing-library": "^0.2.2-next.0",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint-plugin-storybook": "^0.8.0",
     "prop-types": "^15.8.1",
     "rimraf": "^4.4.1",
     "rollup": "^3.20.2",
@@ -91,6 +100,11 @@
     "rollup-plugin-terser": "^7.0.2",
     "semantic-release": "^21.0.0",
     "storybook": "^7.5.0-alpha.7",
+    "storybook-addon-sass-postcss": "^0.2.0",
     "webpack": "^5.74.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

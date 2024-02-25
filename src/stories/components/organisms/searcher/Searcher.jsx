@@ -10,19 +10,37 @@ export const Searcher = ({
   isDisabled,
   isDanger,
   results,
+  isClearable,
   onInput,
+  onClear
 }) => {
   const variant = {
     type: "icon",
-    name: "search"
-  }
+    name: "search",
+  };
 
   return (
     <div className="kiwi-searcher">
-      <Input type="text" variant={variant} placeholder={placeholder} onInput={onInput} isDisabled={isDisabled} isDanger={isDanger} />
+      <Input
+        type="text"
+        variant={variant}
+        placeholder={placeholder}
+        onInput={onInput}
+        isDisabled={isDisabled}
+        isDanger={isDanger}
+        isClearable={isClearable}
+        onClear={onClear}
+      />
       {results && (
         <div className="kiwi-searcher__results">
-          {results.map(({name, link, address, categories}) => <SearchResult name={name} address={address} categories={categories} />)}
+          {results.map(({ name, link, address, categories }) => (
+            <SearchResult
+              name={name}
+              address={address}
+              categories={categories}
+              link={link}
+            />
+          ))}
         </div>
       )}
     </div>
@@ -33,5 +51,5 @@ Searcher.propTypes = {
   placeholder: PropTypes.string.isRequired,
   isDisabled: PropTypes.bool,
   isDanger: PropTypes.bool,
-  onInput: PropTypes.func
+  onInput: PropTypes.func,
 };

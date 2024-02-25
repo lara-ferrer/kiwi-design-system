@@ -12,7 +12,7 @@ export const Radio = ({
   return (
     <label className="kiwi-radio" for={name}>
       <input type="radio" id={id} name={name} />
-      <span class="kiwi-radio__selector" />
+      <span className="kiwi-radio__selector" />
       <span className="kiwi-radio__label">{label}</span>
     </label>
   );

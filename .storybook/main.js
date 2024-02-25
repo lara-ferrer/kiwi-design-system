@@ -1,22 +1,23 @@
-const path = require("path");
-
-module.exports = {
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
-
+/** @type { import('@storybook/react-webpack5').StorybookConfig } */
+const config = {
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
-    "@storybook/preset-create-react-app",
-    "@storybook/addon-mdx-gfm"
+    "@storybook/preset-scss"
   ],
-
   framework: {
     name: "@storybook/react-webpack5",
-    options: {}
+    options: {
+      builder: {
+        useSWC: true,
+      },
+    },
   },
-
   docs: {
-    autodocs: true
-  }
+    autodocs: "tag",
+  },
 };
+export default config;
