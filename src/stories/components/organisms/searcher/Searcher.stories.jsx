@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Searcher } from './Searcher';
+import { Searcher } from './searcher';
 
 export default {
   title: 'Components/Organisms/Searcher',

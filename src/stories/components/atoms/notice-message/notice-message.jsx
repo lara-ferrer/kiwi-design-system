@@ -1,21 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Icon } from "../icon/Icon";
+import { Icon } from "../icon";
 import "./notice-message.scss";
 
-export const NoticeMessage = ({ message }) => {
+export const NoticeMessage = ({ children }) => {
   return (
     <div className="kiwi-notice-message">
       <Icon name="notice" />
-      {message}
+      <div className="kiwi-notice-message__children">
+        { children }
+      </div>
     </div>
   );
 };
 
 NoticeMessage.propTypes = {
-  message: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 NoticeMessage.defaultProps = {
-  message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 };

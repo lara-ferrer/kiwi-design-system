@@ -1,0 +1,20 @@
+:root {
+    /* Global */
+    --kiwi-modal-border-color: var(--kiwi-core-green-500);
+    --kiwi-modal-background-color: var(--kiwi-core-white);
+    --kiwi-modal-border-width: 5px;
+    --kiwi-modal-padding: 50px;
+    --kiwi-modal-elements-padding: 63px;
+    --kiwi-modal-icon-close-ff: var(--kiwi-core-ff-primary);
+    --kiwi-modal-icon-close-fw: var(--kiwi-core-fw-600);
+    --kiwi-modal-icon-close-fs: var(--kiwi-core-fs-32);
+
+    /* Overlay */
+    --kiwi-modal-overlay-background-color: var(--kiwi-core-neutral-600);
+
+    /* Sizes - Large */
+    --kiwi-modal-large-max-width: 743px;
+    
+    /* Sizes - Medium */
+    --kiwi-modal-medium-max-width: 592px;
+}

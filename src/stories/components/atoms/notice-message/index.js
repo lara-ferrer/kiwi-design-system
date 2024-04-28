@@ -1,1 +1,1 @@
-export * from "./notice-message";
+export * from "./notice-message.jsx";

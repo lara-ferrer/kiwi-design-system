@@ -1,4 +1,5 @@
-export * from './BusinessCard';
-export * from './CityCard';
+export * from './modal';
+export * from './business-card';
+export * from './city-card';
 export * from './searcher';
 export * from './text-card';

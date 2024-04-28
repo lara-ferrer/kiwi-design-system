@@ -1,6 +1,6 @@
 import React from 'react';
 import image from "../../../assets/card-image.jpg";
-import { BusinessCard } from './BusinessCard';
+import { BusinessCard } from './business-card';
 
 export default {
   title: 'Components/Organisms/BusinessCard',

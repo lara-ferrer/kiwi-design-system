@@ -10,6 +10,11 @@
   padding: var(--kiwi-notice-message-padding);
   gap: 1rem;
 
+  &__children {
+    display: flex;
+    flex-direction: column;
+  };
+
   .kiwi-icon {
     --kiwi-icon-color: var(--kiwi-notice-message-icon-color);
   }
