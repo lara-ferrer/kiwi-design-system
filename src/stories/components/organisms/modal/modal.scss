@@ -2,7 +2,6 @@
 @import "./modal.tokens.scss";
 
 .kiwi-modal {
-    position: absolute;
     border: var(--kiwi-modal-border-width) solid var(--kiwi-modal-border-color);
     padding: var(--kiwi-modal-padding);
     position: fixed;

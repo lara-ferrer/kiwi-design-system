@@ -1,0 +1,41 @@
+@import "../../../../../src/tokens/index.scss";
+@import "./context-menu.tokens.scss";
+
+.kiwi-context-menu {
+    position: absolute;
+    border: var(--kiwi-context-menu-border-width) solid var(--kiwi-context-menu-border-color);
+    padding: var(--kiwi-context-menu-padding);
+    max-width: var(--kiwi-context-menu-max-width);
+    width: var(--kiwi-context-menu-max-width);
+    z-index: 2;
+    background-color: var(--kiwi-context-menu-background-color);
+    margin: 0 auto;
+    height: fit-content;
+
+    &__overlay {
+        background-color: var(--kiwi-context-menu-overlay-background-color);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 80%;
+    }
+
+    &__option {
+        cursor: pointer;
+        text-align: center;
+        padding: var(--kiwi-context-menu-option-padding-vertical);
+        transition: var(--kiwi-context-menu-option-hover-transition);
+
+        &:hover {
+            color: var(--kiwi-context-menu-option-hover-color);
+            transition: var(--kiwi-context-menu-option-hover-transition);
+        }
+    }
+
+    &__option:not(:last-child) {
+        border-bottom: var(--kiwi-context-menu-border-width) solid var(--kiwi-context-menu-border-color);
+    }
+};
