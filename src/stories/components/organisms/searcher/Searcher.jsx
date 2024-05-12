@@ -12,7 +12,8 @@ export const Searcher = ({
   results,
   isClearable,
   onInput,
-  onClear
+  onClear,
+  onKeyDown
 }) => {
   const variant = {
     type: "icon",
@@ -30,6 +31,7 @@ export const Searcher = ({
         isDanger={isDanger}
         isClearable={isClearable}
         onClear={onClear}
+        onKeyDown={onKeyDown}
       />
       {results && (
         <div className="kiwi-searcher__results">
@@ -52,4 +54,5 @@ Searcher.propTypes = {
   isDisabled: PropTypes.bool,
   isDanger: PropTypes.bool,
   onInput: PropTypes.func,
+  onKeyDown: PropTypes.func
 };

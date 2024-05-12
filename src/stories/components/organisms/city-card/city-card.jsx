@@ -22,7 +22,7 @@ export const CityCard = ({
         }}
       >
         <div className="kiwi-city-card__content">
-          <Tag title={`${businessCount} ${businessName}`} size="small" />
+          {/* <Tag title={`${businessCount} ${businessName}`} size="small" /> */}
           <h3 className="kiwi-city-card__title">
             {city}, {country}
           </h3>

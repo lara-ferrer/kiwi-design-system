@@ -6,9 +6,10 @@
     padding: var(--kiwi-modal-padding);
     position: fixed;
     top: 25vh;
-    z-index: 1;
+    left: 0;
+    right: 0;
+    z-index: var(--kiwi-modal-container-z-index);
     background-color: var(--kiwi-modal-background-color);
-    margin: 0 auto;
     height: fit-content;
 
     &__overlay {
@@ -18,7 +19,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: var(--kiwi-modal-overlay-z-index);
         opacity: 80%;
     }
 
