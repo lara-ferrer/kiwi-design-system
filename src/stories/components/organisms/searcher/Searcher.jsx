@@ -35,14 +35,17 @@ export const Searcher = ({
       />
       {results && (
         <div className="kiwi-searcher__results">
-          {results.map(({ name, link, address, categories }) => (
-            <SearchResult
-              name={name}
-              address={address}
-              categories={categories}
-              link={link}
-            />
-          ))}
+          {
+            results.length ? results.map(({ name, link, address, categories }) => (
+              <SearchResult
+                name={name}
+                address={address}
+                categories={categories}
+                link={link}
+              />
+            )) :
+            <p>No se han encontrado resultados</p>
+          }
         </div>
       )}
     </div>
