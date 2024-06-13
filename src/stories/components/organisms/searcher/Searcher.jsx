@@ -29,7 +29,7 @@ export const Searcher = ({
         onInput={onInput}
         isDisabled={isDisabled}
         isDanger={isDanger}
-        isClearable={isClearable}
+        isClearable={false}
         onClear={onClear}
         onKeyDown={onKeyDown}
       />
