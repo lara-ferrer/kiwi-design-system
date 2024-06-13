@@ -1,0 +1,19 @@
+:root {
+    /* Global */
+    --kiwi-context-menu-border-color: var(--kiwi-core-green-500);
+    --kiwi-context-menu-background-color: var(--kiwi-core-white);
+    --kiwi-context-menu-border-width: 5px;
+    --kiwi-context-menu-padding: 10px;
+    --kiwi-context-menu-max-width: 200px;
+    --kiwi-context-menu-width: 200px;
+
+    /* Overlay */
+    --kiwi-context-menu-overlay-background-color: var(--kiwi-core-neutral-600);
+
+    /* Option -- Default */
+    --kiwi-context-menu-option-padding-vertical: 0.5rem 0;
+
+    /* Hover */
+    --kiwi-context-menu-option-hover-color: var(--kiwi-semantic-secondary);
+    --kiwi-context-menu-option-hover-transition: var(--kiwi-core-fast-transition);
+}

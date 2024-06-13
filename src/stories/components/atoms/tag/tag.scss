@@ -1,4 +1,4 @@
-@import "/src/tokens/index.scss";
+@import "../../../../tokens/index.scss";
 @import "./tag.tokens.scss";
 
 .kiwi-tag {
@@ -9,15 +9,8 @@
   padding: var(--kiwi-tag-active-padding-vertical) var(--kiwi-tag-active-padding-horizontal);
   font-family: var(--kiwi-tag-active-ff);
   font-weight: var(--kiwi-tag-active-fw);
-  cursor: pointer;
   transition: var(--kiwi-tag-transition);
-
-  &:hover {
-    transition: var(--kiwi-tag-transition);
-    box-shadow: 0 0 0 1px var(--kiwi-tag-hover-border-color);
-    background-color: var(--kiwi-tag-hover-bg-color);
-    color: var(--kiwi-tag-hover-color);
-  }
+  width: fit-content;
 
   &:focus {
     box-shadow: 0 0 0 4px var(--kiwi-tag-focus-bg-contrast);
@@ -31,5 +24,16 @@
   &--medium {
     font-size: var(--kiwi-tag-medium-fs);
     min-width: var(--kiwi-tag-medium-min-width);
+  }
+
+  &--link {
+    cursor: pointer;
+
+    &:hover {
+      transition: var(--kiwi-tag-transition);
+      box-shadow: 0 0 0 1px var(--kiwi-tag-hover-border-color);
+      background-color: var(--kiwi-tag-hover-bg-color);
+      color: var(--kiwi-tag-hover-color);
+    }
   }
 }

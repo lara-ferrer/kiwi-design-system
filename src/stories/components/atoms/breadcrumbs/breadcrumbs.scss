@@ -1,0 +1,21 @@
+@import "../../../../tokens/index.scss";
+@import "./breadcrumbs.tokens.scss";
+
+.kiwi-breadcrumbs {
+  color: var(--kiwi-breadcrumbs-color);
+
+  &__item {
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__item:hover {
+    opacity: 0.7;
+    transition: var(--kiwi-breadcrumbs-hover-transition);
+  }
+
+  &--active {
+    color: var(--kiwi-breadcrumbs-active-color);
+  }
+}

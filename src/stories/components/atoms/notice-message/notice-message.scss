@@ -1,0 +1,21 @@
+@import "../../../../tokens/index.scss";
+@import "./notice-message.tokens.scss";
+
+.kiwi-notice-message {
+  width: fit-content;
+  display: flex;
+  color: var(--kiwi-notice-message-color);
+  background-color: var(--kiwi-notice-message-bg-color);
+  border-radius: var(--kiwi-notice-message-border-radius);
+  padding: var(--kiwi-notice-message-padding);
+  gap: 1rem;
+
+  &__children {
+    display: flex;
+    flex-direction: column;
+  };
+
+  .kiwi-icon {
+    --kiwi-icon-color: var(--kiwi-notice-message-icon-color);
+  }
+}

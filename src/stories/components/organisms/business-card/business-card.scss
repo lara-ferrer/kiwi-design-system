@@ -1,0 +1,34 @@
+@import "../../../../../src/tokens/index.scss";
+@import "./business-card.tokens.scss";
+
+.kiwi-business-card {
+    --kiwi-tag-active-bg-color: var(--kiwi-core-green-900);
+    --kiwi-tag-active-color: var(--kiwi-core-white);
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--kiwi-business-card-bg);
+    border: 1px solid var(--kiwi-business-card-border-color);
+    border-radius: var(--kiwi-business-card-border-radius);
+    min-height: var(--kiwi-business-card-min-height);
+    max-width: var(--kiwi-business-card-max-width);
+
+    &__image {
+        width: 100%;
+        max-height: var(--kiwi-business-card-image-max-height);
+        border-radius: var(--kiwi-business-card-border-radius) var(--kiwi-business-card-border-radius) 0 0;
+    }
+
+    &__content {
+        height: calc(234px - (var(--kiwi-business-card-content-padding) * 2));
+        padding: var(--kiwi-business-card-content-padding);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__categories {
+        display: flex;
+        gap: var(--kiwi-business-card-categories-gap);
+    }
+}

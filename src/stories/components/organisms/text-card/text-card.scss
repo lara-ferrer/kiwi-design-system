@@ -1,0 +1,19 @@
+@import "../../../../../src/tokens/index.scss";
+@import "./text-card.tokens.scss";
+
+.kiwi-text-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--kiwi-text-card-padding);
+    background-color: var(--kiwi-text-card-bg);
+    border: 1px solid var(--kiwi-text-card-border-color);
+    border-radius: var(--kiwi-text-card-border-radius);
+    max-height: var(--kiwi-text-card-min-height);
+    //max-width: var(--kiwi-text-card-max-width);
+    z-index: 1;
+
+    &--image {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}

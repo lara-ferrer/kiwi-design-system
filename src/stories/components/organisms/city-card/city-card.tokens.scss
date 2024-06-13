@@ -1,0 +1,16 @@
+:root {
+    /* Global */
+    --kiwi-city-card-bg: var(--kiwi-core-white);
+    --kiwi-city-card-border-color: var(--kiwi-core-green-800);
+    --kiwi-city-card-border-radius: var(--kiwi-core-br-16);
+    --kiwi-city-card-min-height: 400px;
+    --kiwi-city-card-max-width: 300px;
+    --kiwi-city-card-image-max-height: 166px;
+    --kiwi-city-card-content-padding: var(--kiwi-core-spacing-16);
+    --kiwi-city-card-categories-gap: 8px;
+    --kiwi-city-card-title-lh: var(--kiwi-core-lh-40);
+
+    /* Size -- Medium */
+    --kiwi-city-card-width: 300px;
+    --kiwi-city-card-height: 300px;
+}

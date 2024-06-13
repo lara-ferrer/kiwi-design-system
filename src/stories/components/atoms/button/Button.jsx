@@ -20,7 +20,7 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={`kiwi-button btnClass kiwi-button--${state} kiwi-button--${size} ${btnClass}`}
+      className={`kiwi-button kiwi-button--${state} kiwi-button--${size} ${btnClass}`}
       onClick={onClick}
     >
       <span className={`kiwi-text-button--${size}`}>{label}</span>

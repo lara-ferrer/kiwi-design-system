@@ -9,7 +9,15 @@ export default {
 
 const Template = (args) => <Tag {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  title: 'Vegan'
+export const Default = Template.bind({});
+Default.args = {
+  title: "Vegan",
+  size: "small"
+};
+
+export const WithLink = Template.bind({});
+WithLink.args = {
+  title: "Vegan",
+  size: "small",
+  link: "https://www.google.es"
 };
